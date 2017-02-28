@@ -295,13 +295,13 @@ summary {
   min-height: 1px;
   padding-left: 20px;
   vertical-align: top; }
-  @media (max-width: 640px) {
+  @media (max-width: 800px) {
     .grid {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 640px) and (min-width: 320px) {
+  @media (max-width: 800px) and (min-width: 400px) {
     .grid[class*="grid--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -315,7 +315,7 @@ summary {
       width: 25%; }
     .grid.grid--m-3-of-4 {
       width: 75%; } }
-  @media (max-width: 320px) {
+  @media (max-width: 400px) {
     .grid[class*="grid--s-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -785,19 +785,21 @@ ul li {
 .back-tint {
   background-color: rgba(0, 235, 127, 0.07); }
 
+.side-padding {
+  padding: 0.25em 1.75em 0.5em 1.75em; }
+
 .feat-box {
   position: relative;
   width: 12.5em;
   height: 12.5em;
   margin: auto;
-  padding: 1.25em 0.75em 0 0.75em; }
+  padding: 0.25em 0.75em 0 0.75em; }
   .feat-box img {
     width: 100%; }
 
 .feat-content {
   position: relative;
-  margin: auto;
-  padding-bottom: 3em; }
+  margin: auto; }
 
 @media (max-width: 50em) {
   .container {
