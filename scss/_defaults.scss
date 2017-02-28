@@ -1,0 +1,278 @@
+// _defaults.scss - NREZA
+
+// 0. *** BASE FONTS ***
+
+$font1: 'Lato', sans-serif;
+$font2: 'Fjalla One', sans-serif;
+$font3:  'Roboto Slab', serif;
+
+@mixin baseFont {
+body {	
+	font-family: $font1;
+	font-weight: 300;
+}
+	em{
+	font-family: $font1;
+	font-style: italic;
+	font-weight: 300i;		
+	}
+}
+
+@mixin headFont {
+	h1,h3 { 
+		font-family: $font2;
+	}
+	h2, h4 { 
+		font-family: $font3;
+		font-weight: 400;
+	}
+	h2, h3 {
+		text-transform: uppercase;
+	}
+}
+
+//--
+
+
+// 1. *** BASE FONT SIZE ***
+html {font-size: 16px;font-size: 1em;}
+@include baseFont;
+@include headFont;
+
+body {
+  line-height: 1.45;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 5.063em;
+}
+h2 {font-size: 3.375em;}
+h3 {font-size: 2.25em;}
+h4 {font-size: 1.5em;}
+small, .font_small {font-size: 0.667em;}
+
+//--
+
+// 2. *** BOX SIZING ***
+html {box-sizing: border-box;}
+*,*::before,*::after {box-sizing: inherit;}
+//--
+
+// 3. *** REMOVE LIST DOTS ***
+ul li {list-style: none;}
+* {margin: 0;padding: 0;}
+//--
+
+// 4. *** CLEAR FIX ***
+.cf:before,.cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+.cf {*zoom: 1;}
+//--
+
+// 5. *** TEXT ALIGNMENTS ***
+.txt-c {text-align: center;}
+.txt-l {text-align: left;}
+.txt-r {text-align: right;}
+.txt-j {text-align: justify;}
+//--
+
+// 6. *** BASIC STRUCTURES ***
+
+.container {
+  position: relative;
+  top:0;
+  width: 100%;
+  max-width: 90.000em;
+  margin: auto;
+}
+
+.top-bar {
+  position: absolute;
+  top: 1.250em;
+  left: 5%;
+  right: 5%; 
+  z-index: 990;
+}
+.foot-bar {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 10.0em;
+  //background-color: rgba(3, 0, 42, 1);
+}
+//~
+#logoBox {
+  top: 0;
+  float: left;
+  width: 3.125em;
+  height: 3.125em;
+  cursor: pointer;
+  img {width:100%;height:100%;z-index: 999;}
+}
+#navBttn {
+  top: 0;
+  float: right;
+  width: 3.125em;
+  height: 3.125em;
+  cursor: pointer;
+  img {width:100%;height:100%;z-index: 999;}
+}
+#navBox {
+  display: none;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(29, 35, 86, 0.99);
+  z-index: 999;
+      ul {margin-top: 8.0em;  }
+      ul li {
+        text-align: center;
+        padding-bottom: 3.125em;
+        a:link {color: rgba(244, 244, 244, 1);}
+        a:visited {color: rgba(244, 244, 244, 1);}
+        a:hover {color: rgba(53, 218, 209, 1);}
+		}
+#navBttnX {
+	top: 0;
+	float: right; 
+	width: 3.125em;
+	height: 3.125em;
+	float: right;
+	cursor: pointer;
+	img {width:100%;height:100%;  z-index: 9999;}
+  	}
+}
+//~
+
+//~ HERO DIVS
+.hero-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.hero-front {
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	height: 50.0em;	
+	overflow: hidden;
+	z-index: 1;
+}
+.hero-content {
+	position: relative;
+	top: 8em;
+	max-width: 100%;
+	overflow: hidden;	
+	z-index: 5;
+}
+//~
+
+//~ PAGE DIVS
+.page-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 31.250em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.page-front {
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	height: 31.250em;	
+	overflow: hidden;
+	z-index: 1;
+}
+.page-content {
+	position: relative;
+	top: 8em;
+	max-width: 100%;
+	overflow: hidden;	
+	z-index: 5;
+}
+//~
+
+.space-fluid {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.space-fixed {
+	position: relative;
+	width: 60.000em;
+	max-width: 60.000em; 
+	margin: auto;
+	overflow: hidden;
+}
+
+
+// DIVS WITH HEIGHTS
+
+.h-100 {height: 6.250em;}
+.h-200 {height: 12.500em;}
+.h-300 {height: 18.750em;}
+.h-400 {height: 25.000em;}
+.h-500 {height: 31.250em;}
+.h-600 {height: 37.500em;}
+.h-700 {height: 43.750em;}
+.h-800 {height: 50.000em;}
+
+
+/*FILTERS*/
+
+.filter-dots-1 {
+  background-image: url('img/bg-dots-1.svg');
+  background-position: center;
+  background-repeat: repeat;
+}
+.filter-lines-1 {
+  background-image: url('img/bg-lines-1.svg');
+  background-position: center;
+  background-repeat: repeat;
+}
+.filter-lines-2 {
+  background-image: url('img/bg-lines-2.svg');
+  background-position: center;
+  background-repeat: repeat;
+}
+.filter-lines-3 {
+  background-image: url('img/bg-lines-3.svg');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/*Invisible and Visible*/
+.space-invisible{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity:0;
+}
+.space-visible{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.nsf-l {
+	display: none;
+}
+.nsf-lm {
+	display: none;
+}

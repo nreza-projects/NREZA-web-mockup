@@ -1,0 +1,237 @@
+// *** =============================
+// *** MEDIUM SCREEN - 800 PX / 50 EM ***
+// *** -----------------------------
+@media (max-width: 50.000em) {
+	
+//-- *DeleteThis* --// 
+    .container {
+      background-color: rgba(0, 200, 123, 0.3);
+    }
+//-- *DeleteThis* --// 
+
+
+  //--
+body {
+  line-height: 1.45;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+//--
+
+//--
+.top-bar {
+  position: absolute;
+  top: 1.250em;
+  left: 2.5%;
+  right: 2.5%; 
+  z-index: 990;
+}
+//--
+
+//--
+//~ PAGE DIVS
+.page-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 18.750em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.page-front {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 18.750em; 
+  overflow: hidden;
+  z-index: 1;
+}
+.page-content {
+  position: relative;
+  top: 5em;
+  max-width: 100%;
+  overflow: hidden; 
+  z-index: 5;
+}
+//~
+//--
+
+
+//--
+.space-fixed {
+  position: relative;
+  width: 40.000em;
+  max-width: 40.000em;
+  margin: auto;
+  overflow: hidden;
+}
+//--
+
+
+//--
+.nsf-ms {
+display: none;
+}
+
+.nsf-lm {
+	display: none;
+}
+//--
+
+
+/* <--- */}
+
+
+// *** =============================
+// *** SMALL SCREEN - 400 PX / 25 EM ***
+// *** -----------------------------
+@media (max-width: 25.000em) {
+
+//-- *DeleteThis* --// 
+    .container {
+      background-color: rgba(27, 86, 246, 0.2);
+    }
+//-- *DeleteThis* --// 
+
+//--
+body {
+  line-height: 1.45;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 2.441em;
+}
+h2 {font-size: 1.953em;}
+h3 {font-size: 1.563em;}
+h4 {font-size: 1.25em;}
+small, .font_small {font-size: 0.8em;}
+//--
+
+
+//--
+.top-bar {
+  position: absolute;
+  top: 1.250em;
+  left: 0.75%;
+  right: 0.75%; 
+  z-index: 990;
+}
+//--
+
+//--
+//~ HERO DIVS
+.hero-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.hero-front {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 50.0em; 
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  top: 6em;
+  max-width: 100%;
+  overflow: hidden; 
+  z-index: 5;
+}
+//~
+//--
+
+//--
+//~ HERO DIVS
+.hero-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 31.250em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.hero-front {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 31.250em; 
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  top: 2em;
+  max-width: 100%;
+  overflow: hidden; 
+  z-index: 5;
+}
+//~
+//--
+
+//--
+//~ PAGE DIVS
+.page-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 12.500em; 
+  z-index: -5;
+  overflow: hidden;
+}
+.page-front {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 12.500em; 
+  overflow: hidden;
+  z-index: 1;
+}
+.page-content {
+  position: relative;
+  top: 2em;
+  max-width: 100%;
+  overflow: hidden; 
+  z-index: 5;
+}
+//~
+//--
+
+//--
+.space-fixed {
+  position: relative;
+  width: 18.750em;
+  max-width: 18.750em;
+  margin: auto;
+  overflow: hidden;
+}
+//--
+
+//--
+.nsf-s {
+display: none;
+}
+//--
+
+/* <--- */}

@@ -1,0 +1,21 @@
+.btn {
+  width: 9.375em;
+  color: rgba(238, 77, 103, 1);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.86em;
+  padding: 0.625em 1.250em 0.625em 1.250em;
+  border: solid rgba(238, 77, 103, 1) 0.188em;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 1.25em;
+  padding-top: 1.25em;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.33);
+  text-decoration: none;
+}
