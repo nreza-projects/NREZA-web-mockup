@@ -132,7 +132,7 @@ ul li {list-style: none;}
   top:0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(29, 35, 86, 0.99);
+  background-color: rgba(0, 15, 51, 0.98);
   z-index: 999;
       ul {margin-top: 8.0em;  }
       ul li {
@@ -226,14 +226,14 @@ ul li {list-style: none;}
 
 // DIVS WITH HEIGHTS
 
-.h-100 {height: 6.250em;}
-.h-200 {height: 12.500em;}
-.h-300 {height: 18.750em;}
-.h-400 {height: 25.000em;}
-.h-500 {height: 31.250em;}
-.h-600 {height: 37.500em;}
-.h-700 {height: 43.750em;}
-.h-800 {height: 50.000em;}
+.h-100 {min-height: 6.250em;}
+.h-200 {min-height: 12.500em;}
+.h-300 {min-height: 18.750em;}
+.h-400 {min-height: 25.000em;}
+.h-500 {min-height: 31.250em;}
+.h-600 {min-height: 37.500em;}
+.h-700 {min-height: 43.750em;}
+.h-800 {min-height: 50.000em;}
 
 
 /*FILTERS*/

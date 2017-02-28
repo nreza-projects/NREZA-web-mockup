@@ -492,7 +492,7 @@ ul li {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(29, 35, 86, 0.99);
+  background-color: rgba(0, 15, 51, 0.98);
   z-index: 999; }
   #navBox ul {
     margin-top: 8.0em; }
@@ -579,28 +579,28 @@ ul li {
   overflow: hidden; }
 
 .h-100 {
-  height: 6.250em; }
+  min-height: 6.250em; }
 
 .h-200 {
-  height: 12.500em; }
+  min-height: 12.500em; }
 
 .h-300 {
-  height: 18.750em; }
+  min-height: 18.750em; }
 
 .h-400 {
-  height: 25.000em; }
+  min-height: 25.000em; }
 
 .h-500 {
-  height: 31.250em; }
+  min-height: 31.250em; }
 
 .h-600 {
-  height: 37.500em; }
+  min-height: 37.500em; }
 
 .h-700 {
-  height: 43.750em; }
+  min-height: 43.750em; }
 
 .h-800 {
-  height: 50.000em; }
+  min-height: 50.000em; }
 
 /*FILTERS*/
 .filter-dots-1 {
@@ -756,24 +756,18 @@ ul li {
   -webkit-animation-duration: 460ms;
           animation-duration: 460ms; }
 
-.btn {
-  width: 9.375em;
-  color: #ee4d67;
+.btn-hero {
+  border-radius: 28px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.86em;
-  padding: 0.625em 1.250em 0.625em 1.250em;
-  border: solid #ee4d67 0.188em;
-  text-decoration: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 1.25em;
-  padding-top: 1.25em; }
+  color: #ab2959;
+  font-size: 12px;
+  padding: 10px 15px 10px 15px;
+  border: solid #ab2959 2px;
+  text-decoration: none; }
 
-.btn:hover {
-  background: rgba(255, 255, 255, 0.33);
+.btn-hero:hover {
+  background: #ee4d67;
   text-decoration: none; }
 
 /*COLORS*/
@@ -786,7 +780,7 @@ ul li {
   background-color: rgba(0, 235, 127, 0.07); }
 
 .side-padding {
-  padding: 0.25em 1.75em 0.5em 1.75em; }
+  padding: 0 1.75em 0 1.75em; }
 
 .feat-box {
   position: relative;
@@ -798,13 +792,26 @@ ul li {
     width: 100%; }
 
 .feat-content {
+  width: 100%;
   position: relative;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 5em; }
+
+.profile-bg {
+  background-image: url("img/profile-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.profile-box-left {
+  float: left;
+  width: 60%; }
+
+.profile-box-right {
+  float: left;
+  width: 40%;
+  background-color: rgba(242, 243, 244, 0.69); }
 
 @media (max-width: 50em) {
-  .container {
-    background-color: rgba(0, 200, 123, 0.3); }
-
   body {
     line-height: 1.45; }
 
@@ -876,9 +883,6 @@ ul li {
 
   /* <--- */ }
 @media (max-width: 25em) {
-  .container {
-    background-color: rgba(27, 86, 246, 0.2); }
-
   body {
     line-height: 1.45; }
 

@@ -1,21 +1,17 @@
-.btn {
-  width: 9.375em;
-  color: rgba(238, 77, 103, 1);
+.btn-hero {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.86em;
-  padding: 0.625em 1.250em 0.625em 1.250em;
-  border: solid rgba(238, 77, 103, 1) 0.188em;
+  color: #ab2959;
+  font-size: 12px;
+  padding: 10px 15px 10px 15px;
+  border: solid #ab2959 2px;
   text-decoration: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 1.25em;
-  padding-top: 1.25em;
 }
 
-.btn:hover {
-  background: rgba(255, 255, 255, 0.33);
+.btn-hero:hover {
+  background: #ee4d67;
   text-decoration: none;
 }
