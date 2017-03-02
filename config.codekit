@@ -57,6 +57,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bg-dots-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 203,
+		"inputAbbreviatedPath": "\/img\/bg-dots-2.png",
+		"outputAbbreviatedPath": "\/img\/bg-dots-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bg-dots-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 194,
+		"inputAbbreviatedPath": "\/img\/bg-dots-3.png",
+		"outputAbbreviatedPath": "\/img\/bg-dots-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg-home-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -64,6 +86,17 @@
 		"initialSize": 30243,
 		"inputAbbreviatedPath": "\/img\/bg-home-01.jpg",
 		"outputAbbreviatedPath": "\/img\/bg-home-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hero-new.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/hero-new.png",
+		"outputAbbreviatedPath": "\/img\/hero-new.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -266,6 +299,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/_viewport.scss",
 		"outputAbbreviatedPath": "\/css\/_viewport.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/_webbeep.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/_webbeep.scss",
+		"outputAbbreviatedPath": "\/css\/_webbeep.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

@@ -1,4 +1,5 @@
 @import 'norm';
+@import 'webbeep';
 @import 'toast';
 @import 'defaults';
 @import 'animation';
@@ -14,11 +15,14 @@ $col-light-tint: rgba(0, 235, 127, 0.07);
 
 
 .hero-back {
-	background-image: url('img/hero.png');
+	background-image: url('img/hero-new.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.hero-content {
+	@include hero-text-lg;
+}
 
 .back-tint {
 	background-color: $col-light-tint;
@@ -44,9 +48,10 @@ $col-light-tint: rgba(0, 235, 127, 0.07);
 }
 
 .profile-bg {
-	background-image: url('img/profile-bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;	
+	//background-image: url('img/profile-bg.jpg');
+	//background-size: cover;
+	//background-repeat: no-repeat;	
+	background-color: rgba(0, 15, 51, 1);
 }
 
 .profile-box-left {

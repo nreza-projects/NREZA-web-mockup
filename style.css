@@ -140,6 +140,61 @@ summary {
 [hidden], template {
   display: none; }
 
+#beepBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(234, 234, 234, 0.77); }
+
+#beepLoader {
+  display: inline-block;
+  margin-top: 15.625em;
+  width: 6.250em;
+  height: 6.250em;
+  z-index: 99999; }
+
+#beepLoader img {
+  width: 100%;
+  height: 100%; }
+
+/*ROTATION*/
+.loader {
+  animation: loader-rotate linear 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: loader-rotate linear 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: loader-rotate linear 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: loader-rotate linear 0.5s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: loader-rotate linear 0.5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%; }
+
+@keyframes loader-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  66% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@-webkit-keyframes loader-rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  66% {
+    -webkit-transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 .toast {
   list-style: none;
   margin-left: -20px; }
@@ -608,6 +663,11 @@ ul li {
   background-position: center;
   background-repeat: repeat; }
 
+.filter-dots-2 {
+  background-image: url("img/bg-dots-2.svg");
+  background-position: center;
+  background-repeat: repeat; }
+
 .filter-lines-1 {
   background-image: url("img/bg-lines-1.svg");
   background-position: center;
@@ -756,6 +816,41 @@ ul li {
   -webkit-animation-duration: 460ms;
           animation-duration: 460ms; }
 
+/*ROTATION*/
+.loader {
+  animation: loader-action linear 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: loader-action linear 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: loader-action linear 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: loader-action linear 0.5s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: loader-action linear 0.5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%; }
+
+@keyframes loader-action {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  66% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@-webkit-keyframes loader-action {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  66% {
+    -webkit-transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 .btn-hero {
   border-radius: 28px;
   font-family: 'Lato', sans-serif;
@@ -772,9 +867,19 @@ ul li {
 
 /*COLORS*/
 .hero-back {
-  background-image: url("img/hero.png");
+  background-image: url("img/hero-new.png");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.hero-content p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin: 0;
+  color: #1d3787; }
+.hero-content h1 {
+  color: #001c5e; }
 
 .back-tint {
   background-color: rgba(0, 235, 127, 0.07); }
@@ -798,9 +903,7 @@ ul li {
   padding-bottom: 5em; }
 
 .profile-bg {
-  background-image: url("img/profile-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-color: #000f33; }
 
 .profile-box-left {
   float: left;
